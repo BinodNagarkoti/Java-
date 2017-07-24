@@ -4,7 +4,7 @@
 
 using namespace std;
 
-string RanddomAlpha-num(int length)
+string RandomString(int length)
 {
    srand(time(0));
    string string = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -12,13 +12,13 @@ string RanddomAlpha-num(int length)
    int position;
    while(newstring.size() != length) {
     position = ((rand() % (string.size() - 1)));
-    newstring += string.substr(position,1);
+    newstring += string.substr(pos,1);
    }
    return newstring;
 }
-length
-int main()position
+
+int main()
 {
-   string random_string = RanddomAlpha-num(10);
-   cout << "random_string : " << random_string << endl;
+   string random_string = RandomString(10);
+   cout << "randome_string : " << random_string << endl;
 }
